@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guide.zzdts.operation.activity.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout_bottom_bar">
+
+        <Button
+            android:text="@string/bottom_bar_left"
+            android:background="@null"
+            android:textColor="@drawable/bottom_bar_left_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_bottom_bar_que"
+            android:onClick="click_button_bar"
+            android:drawableTop="@drawable/bottom_bar_left_picture"
+            android:layout_weight="1" />
+
+        <Button
+               android:text="@string/bottom_bar_middle"
+               android:textColor="@drawable/bottom_bar_middle_text"
+               android:background="@null"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/button_bottom_bar_use"
+               android:onClick="click_button_bar"
+               android:drawableTop="@drawable/bottom_bar_middle_picture"
+               android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_bottom_bar_commu"
+            android:background="@null"
+            android:textColor="@drawable/bottom_bar_left_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/community"
+            android:drawableTop="@drawable/bottom_bar_left_picture"
+            android:onClick="click_button_bar"/>
+
+        <Button
+               android:text="@string/bottom_bar_right"
+               android:textColor="@drawable/bottom_bar_right_text"
+               android:background="@null"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/button_bottom_bar_mine"
+               android:onClick="click_button_bar"
+               android:drawableTop="@drawable/bottom_bar_right_picture"
+               android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_zone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout_bottom_bar">
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

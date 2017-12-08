@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorTurquoise"
+        android:orientation="horizontal"
+        android:id="@+id/defineActionBar">
+
+
+        <TextView
+            android:id="@+id/textView_tsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:background="@drawable/action_zz_tsc_background"
+            android:text="@string/tsc"
+            android:textColor="@drawable/action_zz_tsc_text"
+            android:textSize="24sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView_zz" />
+
+        <TextView
+            android:id="@+id/textView_zz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="138dp"
+            android:background="@drawable/action_zz_tsc_background"
+            android:text="@string/zz"
+            android:textColor="@drawable/action_zz_tsc_text"
+            android:textSize="24sp"
+            android:layout_alignBaseline="@+id/textView_tsc"
+            android:layout_alignBottom="@+id/textView_tsc"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</LinearLayout>
